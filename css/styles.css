@@ -70,6 +70,10 @@ p {
   padding: 5.5rem 6rem;
 }
 
+.block--lg {
+  padding: 5.5rem 2rem;
+}
+
 .block-header {
   text-align: center;
   max-width: 790px;
@@ -103,6 +107,7 @@ p {
 .card {
   padding: 4rem 5rem;
   box-shadow: 0 0 16px 9px #e7e7e7;
+  border: 1px solid #dedede;
   border-radius: 1rem;
 }
 
@@ -131,6 +136,7 @@ a {
   white-space: nowrap;
   display: inline-block;
   border-radius: 4rem;
+  border: none;
 }
 
 .btn--secondary {
@@ -147,6 +153,13 @@ a {
 .btn--white-1:hover {
   background-color: var(--color-secondary);
   color: var(--color-white);
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  padding: 2.2rem 0;
 }
 
 .btn--stretched {
@@ -198,6 +211,22 @@ a {
 
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
+}
+
+/* Inputs */
+.input {
+  display: block;
+  width: 100%;
+  outline: none;
+  padding: 1.6rem 2rem;
+  border: 1px solid #dedede;
+  border-radius: 0.7rem;
+}
+
+::placeholder {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 /* SECTIONS */
@@ -396,5 +425,84 @@ header {
 
   .features:nth-of-type(even) .feature__content {
     order: 1;
+  }
+}
+
+/* Pricing */
+.pricing {
+  margin-top: 7rem;
+  gap: 3.3rem;
+}
+
+.pricing__card {
+  text-align: center;
+  padding: 6rem 4rem;
+  box-shadow: none;
+}
+
+.pricing__image {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.pricing__value {
+  color: var(--color-primary);
+  font-size: 5.5rem;
+  font-weight: 700;
+  vertical-align: top;
+}
+
+.pricing__info {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.7rem;
+  margin-left: 1rem;
+}
+
+.pricing__currency {
+  color: var(--color-primary);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.pricing__duration {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.pricing__list {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
+.pricing__list .list__item {
+  margin-bottom: 3rem;
+  color: var(--color-black);
+}
+
+/* Subscribe */
+.subscribe {
+  margin-top: 6rem;
+  gap: 1.2rem;
+}
+
+.subscribe__container {
+  max-width: 65.1rem;
+  margin: 0 auto;
+}
+
+.subscribe__input {
+  background-color: #efefef;
+}
+
+.subscribe__btn {
+  border-radius: 0.7rem;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__btn {
+    max-width: 17.7rem;
+    border-radius: 4rem;
   }
 }
