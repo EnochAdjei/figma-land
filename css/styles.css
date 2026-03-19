@@ -501,7 +501,12 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .subscribe {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
   .subscribe__btn {
+    width: 17rem;
     max-width: 17.7rem;
     border-radius: 4rem;
   }
